@@ -6,6 +6,7 @@
 //  Copyright © 2020 柿沼儀揚. All rights reserved.
 //
 
+// 初期表示View
 import UIKit
 
 class ViewController: UIViewController {
@@ -15,6 +16,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func tappedLogin(_ sender: Any) {
+        self.performSegue(withIdentifier: "gotoFaceDetect", sender: nil)
+    }
 
 }
-
